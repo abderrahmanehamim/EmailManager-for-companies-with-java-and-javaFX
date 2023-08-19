@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="594.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.homeController">
+   <children>
+      <VBox prefHeight="509.0" prefWidth="741.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="96.0" prefWidth="754.0" text="MailingLISTS" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Italic" size="61.0" />
+               </font>
+            </Label>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <ScrollPane fx:id="scroll">
+                    <content>
+                        <GridPane fx:id="grid" prefHeight="1.0" prefWidth="106.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           </rowConstraints>
+                        </GridPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="change" layoutX="251.0" layoutY="537.0" mnemonicParsing="false" onAction="#alter" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: #0B5C2A;" text="Modifier Liste" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="417.0" layoutY="537.0" mnemonicParsing="false" onAction="#delete" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: #0B5C2A;" text="Supprimer Liste" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="103.0" prefWidth="506.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SendMailController">
+   <children>
+      <Pane fx:id="option" layoutY="3.0" prefHeight="594.0" prefWidth="660.0">
+         <children>
+            <TextField fx:id="Sendto" layoutX="111.0" layoutY="95.0" prefHeight="36.0" prefWidth="517.0" promptText="Example@gmail.com" />
+            <TextField fx:id="Subject" layoutX="111.0" layoutY="141.0" prefHeight="38.0" prefWidth="517.0" promptText="Subject" />
+            <Label layoutX="54.0" layoutY="95.0" text="To :" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="19.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/sendto_30px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="145.0" prefHeight="28.0" prefWidth="71.0" text="Subject :" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Message" alignment="TOP_LEFT" layoutX="111.0" layoutY="201.0" prefHeight="343.0" prefWidth="517.0" />
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="5.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/elective_50px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="39.0" layoutY="203.0" prefHeight="28.0" prefWidth="63.0" text="Body :" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="5.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/message_exchange_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="576.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/send_24px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="Send" layoutX="557.0" layoutY="14.0" onAction="#Sendmessage" prefHeight="52.0" prefWidth="81.0" text=" " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <Button fx:id="browse" layoutX="392.0" layoutY="40.0" mnemonicParsing="false" onAction="#browseev" text="Browse" />
+            <MenuButton fx:id="mail" layoutX="228.0" layoutY="40.0" mnemonicParsing="false" text="Choose a mailing list">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

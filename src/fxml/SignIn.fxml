@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignInController">
+   <children>
+      <VBox fx:id="VBox" prefHeight="426.0" prefWidth="410.0" styleClass="white-pane" stylesheets="@../application/application.css" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btn_login" onAction="#openHome" prefHeight="48.0" prefWidth="114.0" styleClass="bleu-btn" stylesheets="@../application/application.css" text="Sign In" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="60.0" left="150.0" right="60.0" top="280.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Courgette Regular" size="23.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label layoutX="89.0" prefHeight="66.0" prefWidth="246.0" text="     Sign In " textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="Courgette Regular" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="60.0" layoutY="10.0" prefHeight="35.0" prefWidth="300.0" promptText="Email" stylesheets="@../application/application.css" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="150.0" />
+      <FontAwesomeIconView fill="#00000066" glyphName="ENVELOPE" layoutX="330.0" layoutY="172.0" size="15" />
+      <PasswordField fx:id="txtPassword" layoutX="131.0" layoutY="200.0" prefHeight="35.0" prefWidth="300.0" promptText="Password" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="200.0" />
+      <FontAwesomeIconView fill="#00000066" glyphName="LOCK" layoutX="332.0" layoutY="223.0" size="17" text="" />
+   </children>
+</AnchorPane>

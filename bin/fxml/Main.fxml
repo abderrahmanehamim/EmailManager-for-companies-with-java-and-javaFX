@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="735.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="controllers.MainController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" />
+      <Pane blendMode="DARKEN" prefHeight="426.0" prefWidth="695.0" styleClass="pane" stylesheets="@../application/application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="17.0" layoutY="59.0" prefHeight="53.0" prefWidth="285.0" text="Welcome Back !" textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="40.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSignIn" layoutX="523.0" layoutY="272.0" onAction="#openSignIn" prefHeight="25.0" prefWidth="100.0" styleClass="trans-btn-white-border" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="32.0" layoutY="151.0" prefHeight="28.0" prefWidth="255.0" text="To keep connected with us " textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="180.0" prefHeight="28.0" prefWidth="224.0" text="please login with your " textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="205.0" prefHeight="28.0" prefWidth="142.0" text="personal info" textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="431.0" layoutY="71.0" prefHeight="53.0" prefWidth="285.0" text="Mail Manager" textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="460.0" layoutY="151.0" prefHeight="28.0" prefWidth="255.0" text="Manage your messaging" textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="475.0" layoutY="178.0" prefHeight="28.0" prefWidth="224.0" text="more easily now with" textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="203.0" prefHeight="28.0" prefWidth="166.0" text="our application !!" textFill="WHITE">
+               <font>
+                  <Font name="Courgette Regular" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="172.0" fitWidth="188.0" layoutX="56.0" layoutY="217.0">
+               <image>
+                  <Image url="@../../../logo_emaol_2-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <VBox fx:id="VBox" layoutY="-3.0" prefHeight="426.0" prefWidth="414.0" styleClass="white-pane" stylesheets="@../application/application.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

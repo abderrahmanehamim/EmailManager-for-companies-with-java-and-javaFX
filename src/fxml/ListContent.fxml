@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="597.0" prefWidth="898.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListContentController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="910.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mail-box-postbox-mailbox-tree-Copy.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="25.0" layoutY="142.0" prefHeight="286.0" prefWidth="859.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="190.40002155303955" text="Id" />
+            <TableColumn fx:id="Uname" prefWidth="188.7999725341797" text="User name" />
+            <TableColumn fx:id="Email" prefWidth="476.00006103515625" text="Email" />
+         </columns>
+      </TableView>
+      <TextField fx:id="ins_email" layoutX="477.0" layoutY="454.0" prefHeight="27.0" prefWidth="334.0" promptText="Adresse d'Email">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ins_uname" layoutX="170.0" layoutY="454.0" prefHeight="27.0" prefWidth="202.0" promptText="Nom d'Utilisateur">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="48.0" layoutY="87.0" style="-fx-background-color: violet; -fx-font-size: 16; -fx-text-fill: white;" text="NumClient" />
+      <TextField fx:id="code_client" layoutX="144.0" layoutY="87.0" prefHeight="26.0" prefWidth="665.0" promptText="Entrez le numéro client" />
+      <Button fx:id="Supprimer" layoutX="321.0" layoutY="506.0" mnemonicParsing="false" onAction="#delete" prefHeight="39.0" prefWidth="76.0" text="Delete" />
+      <Button fx:id="Update" layoutX="470.0" layoutY="506.0" mnemonicParsing="false" onAction="#update" prefHeight="39.0" prefWidth="76.0" text="Modifier" />
+      <Button fx:id="Ajouter" layoutX="606.0" layoutY="506.0" mnemonicParsing="false" onAction="#add" prefHeight="39.0" prefWidth="76.0" text="Add" />
+   </children>
+</AnchorPane>

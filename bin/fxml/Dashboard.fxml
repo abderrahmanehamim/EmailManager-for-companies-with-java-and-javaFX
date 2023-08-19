@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="606.0" prefWidth="1054.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.18541033434650453" prefHeight="606.0" prefWidth="1054.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="206.0">
+               <children>
+                  <SplitPane orientation="VERTICAL" prefHeight="606.0" prefWidth="523.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#newtext" prefHeight="606.0" prefWidth="215.0">
+                           <children>
+                              <Label layoutX="65.0" prefHeight="56.0" prefWidth="126.0" text="Nouveau Message" />
+                              <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/edit.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="848.0">
+               <children>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="855.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

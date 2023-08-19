@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Dashboard_hamimController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #0B5C2A;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="73.0" prefWidth="270.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/menu_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="95.0" layoutY="13.0" prefHeight="47.0" prefWidth="126.0" text="Inbox-Gmail" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="507.0" prefWidth="278.0">
+               <children>
+                  <JFXButton fx:id="NewMail" layoutX="63.0" layoutY="66.0" onAction="#newmess" prefHeight="51.0" prefWidth="188.0" text="New Mail" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="10.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/plus_math_50px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="Inbox" layoutX="63.0" layoutY="112.0" onAction="#loadinbox" prefHeight="51.0" prefWidth="186.0" text="Inbox" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="10.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/inbox_50px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="Sent" layoutX="66.0" layoutY="169.0" onAction="#loadsent" prefHeight="51.0" prefWidth="181.0" text="Sent" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="10.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/sent_50px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="Trash" layoutX="66.0" layoutY="220.0" onAction="#loadtrash" prefHeight="51.0" prefWidth="183.0" text="Trash" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="10.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/trash_24px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="MailingList" layoutX="66.0" layoutY="280.0" onAction="#loadlists" prefHeight="51.0" prefWidth="195.0" text="Mailing List" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="10.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/list_50px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="Archive" layoutX="66.0" layoutY="338.0" onAction="#loadArchive" prefHeight="51.0" prefWidth="191.0" text="Archive" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="10.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/archive_24px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="Logout" layoutX="104.0" layoutY="404.0" onAction="#logout" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="14.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/logout_rounded_up_32px.png" />
+                     </image>
+                  </ImageView>
+                  <SplitMenuButton fx:id="vb" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="246.0" style="-fx-background-color: transparent;" text="ChooseUser">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </SplitMenuButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="600.0" prefWidth="891.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="932.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mail-box-postbox-mailbox-tree.jpg" />
+               </image>
+            </ImageView>
+            <SplitPane dividerPositions="0.288041053101294" prefHeight="600.0" prefWidth="898.0" style="-fx-background-color: transparent;">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <SplitPane dividerPositions="0.09725935828877004" orientation="VERTICAL" prefHeight="600.0" prefWidth="256.0" style="-fx-background-color: transparent;">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TextField fx:id="search" layoutX="2.0" layoutY="14.0" prefHeight="26.0" prefWidth="182.0" />
+                                    <ImageView fitHeight="33.0" fitWidth="26.0" layoutX="225.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/search-white.png" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXButton fx:id="serchbtn" layoutX="225.0" layoutY="12.0" onAction="#searchsm" prefHeight="30.0" prefWidth="24.0" text=" " />
+                                    <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="195.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/88-882904_mermaiden-crystal-dress-up-game-white-x-icon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXButton fx:id="clear" layoutX="193.0" layoutY="11.0" onAction="#clear" prefHeight="30.0" prefWidth="24.0" text=" " />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <ScrollPane prefHeight="538.0" prefWidth="255.0">
+                                       <content>
+                                          <VBox fx:id="load" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Pane fx:id="option" prefHeight="594.0" prefWidth="680.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
