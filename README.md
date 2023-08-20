@@ -1,7 +1,8 @@
 # EmailManager for companies
+
 # Application de Gestion de Messagerie pour les entreprise - ReadMe
 Ce ReadMe décrit le fonctionnement et les fonctionnalités de l'application de gestion de messagerie développée en Java avec JavaFX, utilisant des fichiers FXML et les API JavaMail.
-
+Remarque : Ce projet a été conçu en collaboration avec deux de mes collègues, Dina et Hiba, au cours de notre première année du cycle ingénieur en Data Science et Intelligence Artificielle.
 # Description de l'Application
 L'application de gestion de messagerie est conçue pour offrir des fonctionnalités avancées de gestion et d'organisation des courriers électroniques. Elle utilise une interface utilisateur conviviale créée avec JavaFX et les fichiers FXML pour assurer une expérience utilisateur fluide.
 
@@ -29,3 +30,8 @@ Les API JavaMail sont intégrées pour la gestion des emails, ce qui permet l'en
 
 # Comment Contribuer
 Si vous souhaitez contribuer à l'amélioration de cette application, n'hésitez pas à créer des pull requests ou à signaler des problèmes dans la section des issues de ce dépôt. Vos contributions seront grandement appréciées pour rendre cette application encore plus performante et utile.
+## Vidéo de Présentation
+
+Regardez la vidéo de présentation de notre application sur YouTube :
+
+[![Vidéo de Présentation](https://img.youtube.com/vi/b0d9E-XHy6M/0.jpg)](https://youtu.be/b0d9E-XHy6M)
