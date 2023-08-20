@@ -1,5 +1,5 @@
-# EmailManagerJavaFx
-# Application de Gestion de Messagerie - ReadMe
+# EmailManager for companies
+# Application de Gestion de Messagerie pour les entreprise - ReadMe
 Ce ReadMe décrit le fonctionnement et les fonctionnalités de l'application de gestion de messagerie développée en Java avec JavaFX, utilisant des fichiers FXML et les API JavaMail.
 
 # Description de l'Application
