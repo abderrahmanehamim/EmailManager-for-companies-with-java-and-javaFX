@@ -3,7 +3,7 @@
 # Application de Gestion de Messagerie pour les entreprise - ReadMe
 Ce ReadMe décrit le fonctionnement et les fonctionnalités de l'application de gestion de messagerie développée en Java avec JavaFX, utilisant des fichiers FXML et les API JavaMail.
 
-## Remarque : Ce projet a été conçu en collaboration avec deux de mes collègues, Dina et Hiba, au cours de notre première année du cycle ingénieur en Data Science et Intelligence Artificielle.
+
 # Description de l'Application
 L'application de gestion de messagerie est conçue pour offrir des fonctionnalités avancées de gestion et d'organisation des courriers électroniques. Elle utilise une interface utilisateur conviviale créée avec JavaFX et les fichiers FXML pour assurer une expérience utilisateur fluide.
 
